@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:navigation/screens/first_screen.dart';
 
 main() {
   runApp(const NavigationApp());
@@ -9,17 +10,8 @@ class NavigationApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
-      home: Scaffold(
-        appBar: AppBar(
-          title: const Text("NavigationApp"),
-        ),
-
-        body:
-      ),
-      routes: {
-        '/': (context) =>
-      },
+    return const MaterialApp(
+      home: FirstScreen(),
     );
   }
 }
